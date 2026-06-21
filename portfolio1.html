@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Soleti Tharun Kumar</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1e2229;
+        }
+
+        .btn-glow {
+            box-shadow: 0 0 20px rgba(104, 211, 46, 0.4);
+        }
+
+        .section-card {
+            background: #2a2f38;
+            border: 1px solid rgba(132, 225, 83, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-8px);
+            border-color: #84e153;
+        }
+
+        /* Renamed to avoid collisions with Tailwind's native spin */
+        .outer-ring {
+            animation: orbit 25s linear infinite;
+        }
+
+        .inner-ring {
+            animation: orbitReverse 20s linear infinite;
+        }
+
+        @keyframes orbit {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes orbitReverse {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+
+        .section-title {
+            color: #84e153;
+        }
+    </style>
+</head>
+
+<body class="text-white">
+
+<header class="fixed top-0 left-0 w-full bg-[#1e2229]/95 backdrop-blur-sm z-50 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 py-5 flex justify-between items-center">
+
+        <h1 class="text-xl md:text-2xl font-bold">My Portfolio</h1>
+
+        <nav class="hidden md:flex gap-8 text-gray-300">
+            <a href="#home" class="hover:text-[#84e153]">Home</a>
+            <a href="#about" class="hover:text-[#84e153]">About</a>
+            <a href="#portfolio" class="hover:text-[#84e153]">Portfolio</a>
+            <a href="#future-plan" class="hover:text-[#84e153]">Future Plan</a>
+            <a href="#contact" class="hover:text-[#84e153]">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<section id="home" class="min-h-screen flex items-center pt-24">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 w-full">
+
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+
+            <div class="w-full md:w-1/2 text-center md:text-left">
+
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Soleti Tharun Kumar
+                </h1>
+
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">
+                    Building Modern & <span class="text-[#84e153]">Responsive Web Experiences</span>
+                </h2>
+
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                   I am a Computer Science student passionate about
+                   programming and web development. I enjoy building
+                   responsive websites and learning modern technologies.
+                   My skills include C, Java, Python, HTML, CSS and
+                   JavaScript. I am always eager to improve my technical
+                   knowledge and create user-friendly applications.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-5 items-center">
+
+                    <a href="Tharun_Kumar_Resume.pdf"
+                       download
+                       class="bg-[#84e153] text-black px-6 py-3 rounded-full font-semibold btn-glow hover:bg-[#72c744] transition">
+                        Download CV
+                    </a>
+
+                    <div class="flex gap-4">
+
+                        <a href="https://github.com/yourusername" target="_blank"
+                           class="w-10 h-10 border border-[#84e153] rounded-full flex items-center justify-center text-[#84e153] hover:bg-[#84e153] hover:text-black">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://linkedin.com/in/yourusername" target="_blank"
+                           class="w-10 h-10 border border-[#84e153] rounded-full flex items-center justify-center text-[#84e153] hover:bg-[#84e153] hover:text-black">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://instagram.com/yourusername" target="_blank"
+                           class="w-10 h-10 border border-[#84e153] rounded-full flex items-center justify-center text-[#84e153] hover:bg-[#84e153] hover:text-black">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="w-full md:w-1/2 flex justify-center">
+
+                <div class="relative w-72 h-72 md:w-[450px] md:h-[450px] flex items-center justify-center">
+
+                    <div class="absolute inset-0 border border-dashed border-[#84e153]/20 rounded-full outer-ring">
+                        <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-[#84e153] rounded-full shadow-[0_0_15px_#84e153]"></div>
+                    </div>
+
+                    <div class="absolute inset-8 border border-gray-700/60 rounded-full inner-ring">
+                        <div class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-[#84e153]/80 rounded-full shadow-[0_0_10px_#84e153]"></div>
+                    </div>
+
+                    <img src="image.png"
+                         class="w-[78%] h-[78%] rounded-full object-cover z-10 border-4 border-[#2a2f38] shadow-2xl">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="about" class="py-24 max-w-7xl mx-auto px-6 md:px-12">
+    <h2 class="text-4xl font-bold section-title mb-8">About Me</h2>
+
+    <div class="section-card p-8 rounded-2xl">
+        <p class="text-gray-300 leading-8">
+                    A dedicated Web Developer and B.Tech student in Computer
+                    Science and Engineering.
+
+                    I have a strong passion for designing and developing
+                    responsive websites that combine creativity with
+                    functionality.
+
+                    My expertise includes HTML, CSS, JavaScript, 
+                    C, Python, Java and modern web design principles.
+                    I enjoy transforming ideas into interactive digital
+                    experiences and continuously improving my skills
+                    through practical projects and hands-on learning.
+
+                    My goal is to become a AI Full-Stack Developer and
+                    contribute to innovative software solutions that
+                    create real-world impact.
+        </p>
+    </div>
+</section>
+
+<section id="portfolio" class="py-24 max-w-7xl mx-auto px-6 md:px-12">
+    <h2 class="text-4xl font-bold section-title mb-8">Portfolio</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="section-card p-6 rounded-2xl">
+            <i class="fas fa-code text-3xl text-[#84e153] mb-4"></i>
+            <h3 class="text-xl font-semibold">Web Projects</h3>
+            <p class="text-gray-400 mt-2">Developed a responsive personal portfolio using
+                        HTML, CSS, and Javascript with smooth scrolling
+                        and modern UI design.</p>
+        </div>
+
+        <div class="section-card p-6 rounded-2xl">
+            <i class="fas fa-laptop-code text-3xl text-[#84e153] mb-4"></i>
+            <h3 class="text-xl font-semibold">Responsive Web Designs</h3>
+            <p class="text-gray-400 mt-2"> Built responsive layouts that adapt seamlessly
+                        across desktop, tablet, and mobile devices.</p>
+        </div>
+
+        <div class="section-card p-6 rounded-2xl">
+            <i class="fas fa-globe text-3xl text-[#84e153] mb-4"></i>
+            <h3 class="text-xl font-semibold">Frontend Development</h3>
+            <p class="text-gray-400 mt-2"> Created interactive websites with modern design,
+                        user-friendly interfaces, and optimized performance.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="future-plan" class="py-24 max-w-7xl mx-auto px-6 md:px-12">
+    <h2 class="text-4xl font-bold section-title mb-8">Future Plan</h2>
+
+    <div class="section-card p-8 rounded-2xl">
+        <ul class="text-gray-300 space-y-3">
+                    <li>✔ Master JavaScript and React.js</li>
+                    <li>✔ Learn Full-Stack Web Development</li>
+                    <li>✔ Explore Artificial Intelligence & Modern Technologies</li>
+                    <li>✔ Build Real-World Industry Projects</li>
+                    <li>✔ Become a Professional Full-Stack Developer</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="py-24 max-w-7xl mx-auto px-6 md:px-12">
+    <h2 class="text-4xl font-bold section-title mb-8">Contact</h2>
+
+    <div class="section-card p-8 rounded-2xl">
+        <p class="text-gray-300">📧 24761a05i6@lbrce.ac.in</p>
+        <p class="text-gray-300 mt-2"> +91 XXXXX XXXXX</p>
+        <p class="text-gray-300 mt-2"> Andhra Pradesh, India</p>
+    </div>
+</section>
+
+<footer class="text-center py-6 text-gray-500 border-t border-gray-800">
+    © 2026 Soleti Tharun Kumar
+</footer>
+
+</body>
+</html>
